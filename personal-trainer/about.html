@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - FitLife Entrenamiento Personal</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF6B35',
+                        secondary: '#2E4057',
+                        light: '#F7F7F7',
+                        dark: '#333333',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-light">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-2xl font-bold text-primary font-heading">FitLife</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-secondary hover:text-primary font-medium transition duration-300">Inicio</a>
+                    <a href="about.html" class="text-primary font-medium transition duration-300">Nosotros</a>
+                    <a href="plans.html" class="text-secondary hover:text-primary font-medium transition duration-300">Planes</a>
+                    <a href="testimonials.html" class="text-secondary hover:text-primary font-medium transition duration-300">Testimonios</a>
+                    <a href="contact.html" class="text-secondary hover:text-primary font-medium transition duration-300">Contacto</a>
+                </div>
+                <div class="hidden md:flex space-x-4">
+                    <a href="login.php" class="px-4 py-2 text-secondary font-medium hover:text-primary transition duration-300">Iniciar Sesión</a>
+                    <a href="register.php" class="px-4 py-2 bg-primary text-white rounded-md hover:bg-opacity-90 transition duration-300">Registrarse</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-secondary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="index.html" class="block py-2 text-secondary hover:text-primary font-medium">Inicio</a>
+                <a href="about.html" class="block py-2 text-primary font-medium">Nosotros</a>
+                <a href="plans.html" class="block py-2 text-secondary hover:text-primary font-medium">Planes</a>
+                <a href="testimonials.html" class="block py-2 text-secondary hover:text-primary font-medium">Testimonios</a>
+                <a href="contact.html" class="block py-2 text-secondary hover:text-primary font-medium">Contacto</a>
+                <div class="flex space-x-4 mt-4">
+                    <a href="login.php" class="px-4 py-2 text-secondary font-medium hover:text-primary transition duration-300">Iniciar Sesión</a>
+                    <a href="register.php" class="px-4 py-2 bg-primary text-white rounded-md hover:bg-opacity-90 transition duration-300">Registrarse</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-20 bg-secondary">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white font-heading mb-4">Sobre Nosotros</h1>
+            <p class="text-white text-lg max-w-3xl mx-auto">Conoce más sobre FitLife, nuestra filosofía y nuestro equipo de entrenadores profesionales.</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-secondary font-heading mb-6">Nuestra Historia</h2>
+                    <p class="text-gray-600 mb-4">FitLife nació en 2015 con una misión clara: transformar vidas a través del entrenamiento personalizado y un enfoque integral de la salud y el bienestar.</p>
+                    <p class="text-gray-600 mb-4">Fundada por un grupo de entrenadores apasionados y con amplia experiencia en el sector del fitness, nuestra empresa ha crecido hasta convertirse en un referente en el entrenamiento personal en España.</p>
+                    <p class="text-gray-600 mb-4">Lo que comenzó como un pequeño estudio con un puñado de clientes, se ha convertido en una comunidad vibrante de personas comprometidas con su salud y bienestar, guiadas por nuestro equipo de profesionales altamente cualificados.</p>
+                    <p class="text-gray-600">Nuestra filosofía se basa en la creencia de que cada persona es única, y por lo tanto, su plan de entrenamiento también debe serlo. Nos enorgullece ofrecer programas verdaderamente personalizados que se adaptan a las necesidades, objetivos y circunstancias individuales de cada cliente.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/4164761/pexels-photo-4164761.jpeg" alt="Nuestra Historia" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pl-10">
+                    <h2 class="text-3xl font-bold text-secondary font-heading mb-6">Nuestra Misión</h2>
+                    <p class="text-gray-600 mb-4">En FitLife, nuestra misión es empoderar a las personas para que alcancen su máximo potencial físico y mental a través de un enfoque personalizado y basado en la evidencia científica.</p>
+                    <p class="text-gray-600 mb-4">Nos comprometemos a proporcionar un servicio de la más alta calidad, con entrenadores certificados y apasionados que se preocupan genuinamente por el progreso y bienestar de cada cliente.</p>
+                    <p class="text-gray-600 mb-4">Creemos en la educación continua, tanto para nuestro equipo como para nuestros clientes. Nos mantenemos al día con las últimas investigaciones y tendencias en el campo del fitness y la nutrición, y compartimos este conocimiento para ayudar a nuestros clientes a tomar decisiones informadas sobre su salud.</p>
+                    <p class="text-gray-600">Nuestra visión es crear un mundo donde el ejercicio y la vida saludable sean accesibles, disfrutables y sostenibles para todos, independientemente de su nivel de condición física o experiencia previa.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.pexels.com/photos/6456300/pexels-photo-6456300.jpeg" alt="Nuestra Misión" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-secondary font-heading mb-4">Nuestros Valores</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Estos son los principios que guían nuestro trabajo y nuestras relaciones con los clientes.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-light p-8 rounded-lg shadow-md text-center transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Pasión</h3>
+                    <p class="text-gray-600">Amamos lo que hacemos y nos apasiona ayudar a nuestros clientes a alcanzar sus objetivos y transformar sus vidas.</p>
+                </div>
+                <div class="bg-light p-8 rounded-lg shadow-md text-center transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Comunidad</h3>
+                    <p class="text-gray-600">Creemos en el poder de la comunidad y el apoyo mutuo para lograr resultados duraderos y significativos.</p>
+                </div>
+                <div class="bg-light p-8 rounded-lg shadow-md text-center transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-graduation-cap text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Educación</h3>
+                    <p class="text-gray-600">Nos comprometemos con la formación continua y compartimos nuestro conocimiento para empoderar a nuestros clientes.</p>
+                </div>
+                <div class="bg-light p-8 rounded-lg shadow-md text-center transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bullseye text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Resultados</h3>
+                    <p class="text-gray-600">Nos enfocamos en obtener resultados medibles y sostenibles, adaptando nuestros métodos a cada individuo.</p>
+                </div>
+                <div class="bg-light p-8 rounded-lg shadow-md text-center transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-balance-scale text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Equilibrio</h3>
+                    <p class="text-gray-600">Promovemos un enfoque equilibrado de la salud que integra el ejercicio, la nutrición y el bienestar mental.</p>
+                </div>
+                <div class="bg-light p-8 rounded-lg shadow-md text-center transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-4">Integridad</h3>
+                    <p class="text-gray-600">Actuamos con honestidad, transparencia y ética en todas nuestras interacciones y decisiones.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="py-16 bg-light">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-secondary font-heading mb-4">Nuestro Equipo</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Conoce a nuestros entrenadores profesionales, apasionados y comprometidos con tu éxito.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+                    <img src="https://images.pexels.com/photos/6456155/pexels-photo-6456155.jpeg" alt="Entrenador" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Carlos Martínez</h3>
+                        <p class="text-primary font-medium mb-4">Director y Entrenador Principal</p>
+                        <p class="text-gray-600 mb-4">Especialista en entrenamiento de fuerza y acondicionamiento físico con más de 10 años de experiencia. Certificado por NSCA y ACSM.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+                    <img src="https://images.pexels.com/photos/6456209/pexels-photo-6456209.jpeg" alt="Entrenadora" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Laura Sánchez</h3>
+                        <p class="text-primary font-medium mb-4">Entrenadora y Nutricionista</p>
+                        <p class="text-gray-600 mb-4">Especialista en nutrición deportiva y entrenamiento funcional. Graduada en Nutrición y certificada como entrenadora personal por ACE.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:transform hover:scale-105">
+                    <img src="https://images.pexels.com/photos/6456303/pexels-photo-6456303.jpeg" alt="Entrenador" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Miguel Rodríguez</h3>
+                        <p class="text-primary font-medium mb-4">Entrenador de Rehabilitación</p>
+                        <p class="text-gray-600 mb-4">Especialista en rehabilitación y entrenamiento correctivo. Fisioterapeuta y certificado en Corrective Exercise por NASM.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="contact.html" class="inline-block px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-opacity-90 transition duration-300">Contacta con Nuestro Equipo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-secondary font-heading mb-4">Nuestras Certificaciones</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Nuestros entrenadores cuentan con certificaciones de las organizaciones más prestigiosas del sector.</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="bg-light p-6 rounded-lg shadow-md text-center transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="h-20 flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-secondary">NSCA</span>
+                    </div>
+                    <p class="text-gray-600">National Strength and Conditioning Association</p>
+                </div>
+                <div class="bg-light p-6 rounded-lg shadow-md text-center transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="h-20 flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-secondary">ACE</span>
+                    </div>
+                    <p class="text-gray-600">American Council on Exercise</p>
+                </div>
+                <div class="bg-light p-6 rounded-lg shadow-md text-center transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="h-20 flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-secondary">ACSM</span>
+                    </div>
+                    <p class="text-gray-600">American College of Sports Medicine</p>
+                </div>
+                <div class="bg-light p-6 rounded-lg shadow-md text-center transition-transform duration-300 hover:transform hover:scale-105">
+                    <div class="h-20 flex items-center justify-center mb-4">
+                        <span class="text-2xl font-bold text-secondary">NASM</span>
+                    </div>
+                    <p class="text-gray-600">National Academy of Sports Medicine</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-secondary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white font-heading mb-6">¿Listo para comenzar tu transformación?</h2>
+            <p class="text-white text-lg mb-8 max-w-2xl mx-auto">Únete a nuestra comunidad y comienza a trabajar en tus objetivos con el apoyo de nuestros entrenadores profesionales.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="register.php" class="px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-opacity-90 transition duration-300">Registrarse Ahora</a>
+                <a href="contact.html" class="px-6 py-3 bg-white text-secondary font-medium rounded-md hover:bg-gray-100 transition duration-300">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 font-heading">FitLife</h3>
+                    <p class="text-gray-400 mb-4">Transformando vidas a través del entrenamiento personalizado y un estilo de vida saludable.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-primary transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 font-heading">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-primary transition duration-300">Inicio</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-primary transition duration-300">Nosotros</a></li>
+                        <li><a href="plans.html" class="text-gray-400 hover:text-primary transition duration-300">Planes</a></li>
+                        <li><a href="testimonials.html" class="text-gray-400 hover:text-primary transition duration-300">Testimonios</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-primary transition duration-300">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 font-heading">Servicios</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Entrenamiento Personal</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Asesoramiento Nutricional</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Entrenamiento en Grupo</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Programas Online</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Evaluación Física</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4 font-heading">Contacto</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">Calle Principal 123, Madrid, España</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-primary mr-3"></i>
+                            <span class="text-gray-400">+34 912 345 678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-primary mr-3"></i>
+                            <span class="text-gray-400">info@fitlife.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock text-primary mr-3"></i>
+                            <span class="text-gray-400">Lun-Vie: 7:00 - 21:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2023 FitLife - Entrenamiento Personal. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
